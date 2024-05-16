@@ -27,7 +27,7 @@ if not Config.API_HASH:
     logger.error("Please set API_HASH in config.py or as env var")
     quit(1)
 from pyrogram import Client, idle
-if __name__ == "__main__" :
+
     # Creating essential directories, if they does not exists
     if not os.path.isdir(Config.DOWNLOAD_LOCATION):
         os.makedirs(Config.DOWNLOAD_LOCATION)
@@ -35,9 +35,7 @@ if __name__ == "__main__" :
         os.makedirs(Config.ADMIN_LOCATION)
     if not os.path.isdir(Config.CREDENTIALS_LOCATION):
         os.makedirs(Config.CREDENTIALS_LOCATION)        
-    plugins = dict(
-        root="plugins"
-    )
+    plugins = dict(root="plugins")
 
 bot = Client(
     "All-Url-Uploader",

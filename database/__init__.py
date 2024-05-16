@@ -12,9 +12,9 @@ else:
 INFO = Config.REDIS_URI.split(":")
 
 DB = redis.StrictRedis(
-    host=INFO[0],
-    port=INFO[1],
-    password=Config.REDIS_PASS,
+    host=redis-19292.c251.east-us-mz.azure.redns.redis-cloud.com,
+    port=19292,
+    password="SjEOvX0VEvxV6UBuY7wherS6BmrsX6v5",
     charset="utf-8",
     decode_responses=True,
 )

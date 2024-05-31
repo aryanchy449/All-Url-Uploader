@@ -37,7 +37,7 @@ class Config(object):
 
     OWNER_ID = os.environ.get("OWNER_ID","6214889840")
     ADL_BOT_RQ = {}
-    AUTH_USERS = list({int(x) for x in os.environ.get("AUTH_USERS", "").split()})
+    AUTH_USERS = list({int(x) for x in os.environ.get("AUTH_USERS", "6214889840").split()})
     AUTH_USERS.append(OWNER_ID)
     
 
